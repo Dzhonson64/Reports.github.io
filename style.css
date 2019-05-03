@@ -1,0 +1,163 @@
+.reports{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.block-list{
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #008204;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color:#ffffff;
+    margin: 10px;
+}
+.month, .years {
+    display: inline-block;
+}
+.inputted {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.inputted  input{
+    border: 0;
+    background: #F6F6f6;
+    width: 100%;
+    margin-right: 5px;
+}
+.inputted  input:focus{
+    outline: none;
+}
+.inputted .controls{
+    display: flex;
+}
+.inputted .plus, .inputted .minus, .inputted .enter{
+    cursor: pointer;
+}
+.inputted .plus, .inputted .minus{
+    padding: 5px 10px;
+    background-color: #36ab20;
+    color: #ffffff;
+    margin: 0 1px;
+    /*margin: 0 5px;*/
+}
+.inputted .enter{
+    padding: 5px 10px;
+    background-color: #0b3a03;
+    color: #ffffff;
+    margin-left: 1px;
+}
+.type-area{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 900;
+}
+.data h3{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.money {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.money .increase, .money .reduction{
+    width: 100%;
+}
+.money h3{
+    text-align: center;
+    margin: 0;
+}
+.money p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+}
+.money i{
+    display: flex;
+}
+.money p:hover::after{
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    margin: 5px;
+    font-size: 15px;
+}
+.money p::before:hover{
+    color: aqua;
+}
+.total {
+    display: flex;
+}
+.select {
+    display: flex;
+}
+.select .list-month, .select .list-years{
+    z-index: 10;
+}
+.select .list-month, .select .list-years{
+    margin: 0;
+	padding: 0;
+	width: 310px;
+	border: 1px solid #cecece;
+	border-top: none;
+	display: none;
+	position: absolute;
+	background: #fff;
+}
+.select li {
+	list-style: none;
+	border-top: 1px dotted #e8e8e8;
+	cursor: pointer;
+	display: block;
+	padding: 4px 15px 4px 25px;
+	background-position: 10px -119px;
+}
+.select .month p{
+    cursor: pointer;
+    background-color: #008204;
+    padding: 10px 15px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.select .years p{
+    cursor: pointer;
+    background-color: #008204;
+    padding: 10px 15px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.add{
+    display: inline-flex;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #ffffff;
+}
+.add:hover{
+    color: #000000;
+    background-color: rgb(58, 57, 57);
+}
+.block-list{
+    position: relative;
+}
+.block-list .cross{
+    cursor: pointer;
+    color: #008204;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 25px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="select">
+    <div class="month">
+        <p onclick="" id = "btn-month">Месяца</p>
+        <ul class="list-month" id = "month">
+            <li onclick="selectMonth(this)">Январь</li>
+            <li onclick="selectMonth(this)">Февраль</li>
+            <li onclick="selectMonth(this)">Март</li>
+            <li onclick="selectMonth(this)">Апрель</li>
+            <li onclick="selectMonth(this)">Май</li>
+            <li onclick="selectMonth(this)">Июнь</li>
+            <li onclick="selectMonth(this)">Июль</li>
+            <li onclick="selectMonth(this)">Август</li>
+            <li onclick="selectMonth(this)">Сентябрь</li>
+            <li onclick="selectMonth(this)">Октябрь</li>
+            <li onclick="selectMonth(this)">Ноябрь</li>
+            <li onclick="selectMonth(this)">Декабрь</li>
+        </ul>
+    </div>
+    <div class="years">
+        <p onclick="" id = "btn-years">Год</p>
+        <ul class="list-years" id = "years">
+                <li onclick="selectYears(this)">2008</li>
+                <li onclick="selectYears(this)">2009</li>
+                <li onclick="selectYears(this)">2010</li>
+                <li onclick="selectYears(this)">2011</li>
+                <li onclick="selectYears(this)">2012</li>
+                <li onclick="selectYears(this)">2013</li>
+                <li onclick="selectYears(this)">2014</li>
+                <li onclick="selectYears(this)">2015</li>
+                <li onclick="selectYears(this)">2016</li>
+                <li onclick="selectYears(this)">2017</li>
+                <li onclick="selectYears(this)">2018</li>
+                <li onclick="selectYears(this)">2019</li>
+            </ul>
+    </div>
+    
+</div>
+
+<div class="reports" id = "report">
+    <div class="block-list">
+            <div class="data">
+                <h3 class = "month">Май</h3>
+                <h3 class = "years">2019</h3>
+            </div>
+            <div class="inputted">
+                <input type="number" > 
+                <div class="controls">
+                    <div class="plus" onclick="increase(this)">+</div>
+                    <div class="minus" onclick="reduction(this)">-</div>
+                </div>
+            </div>
+            <div class="type-area">
+                <p class="num"></p>
+            </div>
+            <div class="money">
+                <div class="increase">
+                    <h3 class = "title">Доходы</h3> -->
+                    <!-- <i class="far fa-times-circle"></i> -->
+                </div>
+                <div class="reduction">
+                    <h3 class = "title">Расходы</h3>
+                </div>
+            </div>
+            <div class="cross" onclick="remove(this)">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+        
+    
+    <div class="add" onclick="create(this)" id = "add">
+        +
+    </div>
+</div>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
