@@ -42,7 +42,6 @@
     background-color: #36ab20;
     color: #ffffff;
     margin: 0 1px;
-    /*margin: 0 5px;*/
 }
 .inputted .enter{
     padding: 5px 10px;
@@ -101,8 +100,18 @@
 .select {
     display: flex;
 }
+
 .select .list-month, .select .list-years{
     z-index: 10;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.select .list-month li, .select .list-years li {
+    transition: all 0.5s ease;
+}
+.select .list-month li:hover, .select .list-years li:hover {
+    background: #808080;
+    color: #ffffff;
 }
 .select .list-month, .select .list-years{
     margin: 0;
@@ -128,6 +137,7 @@
     padding: 10px 15px;
     color: #ffffff;
     margin-right: 15px;
+    transition: all 0.5s ease;
 }
 .select .years p{
     cursor: pointer;
@@ -135,8 +145,11 @@
     padding: 10px 15px;
     color: #ffffff;
     margin-right: 15px;
+    transition: all 0.5s ease;
 }
-
+.select .month p:hover, .select .years p:hover{
+    background-color: #808080;
+}
 .add{
     display: inline-flex;
     padding: 10px 15px;
@@ -147,7 +160,6 @@
     color: #ffffff;
 }
 .add:hover{
-    color: #000000;
     background-color: rgb(58, 57, 57);
 }
 .block-list{
@@ -160,4 +172,8 @@
     top: -30px;
     right: 0;
     font-size: 25px;
+    transition: all 0.5s ease;
+}
+.block-list .cross:hover{
+    color: #808080;
 }
