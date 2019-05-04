@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <div class="select">
     <div class="month">
-        <p onclick="" id = "btn-month">Месяца</p>
+        <p onclick="" id = "btn-month">Месяц</p>
         <ul class="list-month" id = "month">
             <li onclick="selectMonth(this)">Январь</li>
             <li onclick="selectMonth(this)">Февраль</li>
@@ -48,9 +49,15 @@
 </div>
 
 <div class="reports" id = "report">
-    <div class="add" onclick="create(this)" id = "add">
-        +
+    <div class="remove" onclick="remove(this)" id = "remove">
+        <i class="fas fa-minus-circle"></i>
     </div>
+    <div class="add" onclick="create(this)" id = "add">
+        <i class="fas fa-plus-circle"></i>
+    </div>
+</div>
+<div class="error">
+    <p id = "error"><span>Error</span>: Вы ввели не все данные</p>
 </div>
     
     

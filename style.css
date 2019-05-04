@@ -1,3 +1,7 @@
+
+.month, .years, .error, .balance, .money, .inputted input{
+    font-family: 'Roboto', sans-serif;
+}
 .reports{
     display: flex;
     flex-wrap: wrap;
@@ -22,17 +26,22 @@
     justify-content: space-between;
     margin-bottom: 2px;
 }
-.inputted  input{
+.inputted input{
+    padding-left: 5px;
     border: 0;
     background: #F6F6f6;
     width: 100%;
     margin-right: 5px;
+    font-size: 1rem;
 }
 .inputted  input:focus{
     outline: none;
 }
 .inputted .controls{
     display: flex;
+}
+.inputted .minus{
+    padding: 5px 12px !important;
 }
 .inputted .plus, .inputted .minus, .inputted .enter{
     cursor: pointer;
@@ -42,6 +51,10 @@
     background-color: #36ab20;
     color: #ffffff;
     margin: 0 1px;
+    transition: all 0.5s ease;
+}
+.inputted .plus:hover, .inputted .minus:hover{
+    background-color: #808080
 }
 .inputted .enter{
     padding: 5px 10px;
@@ -56,6 +69,10 @@
     background-color: #ffffff;
     color: #000000;
     font-weight: 900;
+}
+.type-area .balance{
+    font-weight: 400;
+    margin-right: 5px;
 }
 .data h3{
     margin-left: 3px;
@@ -74,25 +91,27 @@
     text-align: center;
     margin: 0;
 }
-.money p {
+.money .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    
+}
+.money p {
     margin: 0;
 }
-.money i{
-    display: flex;
-}
-.money p:hover::after{
+.money i {
+    display: none;
     cursor: pointer;
-    font-family: "Font Awesome 5 Free";
-    content: "\f057";
-    margin: 5px;
-    font-size: 15px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+    font-size: 13px;
 }
-.money p::before:hover{
-    color: aqua;
+.money i:hover{
+    color: #ff1313;
+}
+.money .wrapper:hover i{
+    display: block;
 }
 .total {
     display: flex;
@@ -150,17 +169,27 @@
 .select .month p:hover, .select .years p:hover{
     background-color: #808080;
 }
-.add{
-    display: inline-flex;
-    padding: 10px 15px;
-    border-radius: 50%;
-    background-color: gray;
+.remove{
+    display: none;
+    color: #808080;
     cursor: pointer;
     transition: all 0.5s ease;
-    color: #ffffff;
+}
+.remove:hover{
+    color: rgb(58, 57, 57);
+}
+.add, .remove{
+    font-size: 3rem;
+    margin: 3px;
+}
+.add{
+    display: flex;
+    color: #808080;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 .add:hover{
-    background-color: rgb(58, 57, 57);
+    color: rgb(58, 57, 57);
 }
 .block-list{
     position: relative;
@@ -176,4 +205,13 @@
 }
 .block-list .cross:hover{
     color: #808080;
+}
+.error p {
+    display: none;
+}
+.error {
+    color: red;
+}
+.error span{
+    font-weight: 900;
 }
